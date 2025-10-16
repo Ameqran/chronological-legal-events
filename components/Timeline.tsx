@@ -4,11 +4,19 @@ import React, { useState, useMemo } from 'react';
 import { Calendar, FileText, AlertCircle, CheckCircle, XCircle, Clock, ChevronDown, Filter, Search, Eye } from 'lucide-react';
 import { Event, EventIconProps, TimelineEventProps, TypeConfig, TypeConfigs } from '../types';
 
-const events = [
+const events: Event[] = [
+  {
+    date: '10-oct-2022 → 28-abr-2025',
+    title: 'Trabajo con SICPA bajo Profesional Altamente Cualificado',
+    description: 'Experiencia laboral previa como Profesional Altamente Cualificado en SICPA.',
+    files: '-',
+    type: 'info',
+    category: 'trabajo'
+  },
   {
     date: '09-abr-2025',
     title: 'Contrato laboral firmado con Cognizant',
-    description: 'Firmado contrato indefinido (63.000 €/año) para iniciar trabajo el 28-abr-2025 bajo HQP (Ley 14/2013).',
+    description: 'Firmado contrato indefinido (63.000 €/año) para iniciar trabajo el 28-abr-2025 bajo Profesional Altamente Cualificado (Ley 14/2013).',
     files: 'Cognizant contract signed.pdf',
     type: 'success',
     category: 'contrato'
@@ -23,7 +31,7 @@ const events = [
   },
   {
     date: '30 abr 2025',
-    title: 'Correo: contrato "en espera" hasta emisión HQP',
+    title: 'Correo: contrato "en espera" hasta emisión del permiso de Profesional Altamente Cualificado',
     description: 'RRHH le informó que el contrato estaba pausado pendiente de resolución UGE-CE.',
     files: 'Correos dentro del PDF "canceling the contract and work permit update"',
     type: 'warning',
@@ -31,8 +39,8 @@ const events = [
   },
   {
     date: '02-may-2025',
-    title: 'Abogado de Cognizant presentó nueva solicitud HQP',
-    description: 'Solicitud de HQP "autorización de residencia inicial Ley 14/2013" presentada ante UGE-CE.',
+    title: 'Abogado de Cognizant presentó nueva solicitud de Profesional Altamente Cualificado',
+    description: 'Solicitud de Profesional Altamente Cualificado "autorización de residencia inicial Ley 14/2013" presentada ante UGE-CE.',
     files: '—',
     type: 'info',
     category: 'permiso'
@@ -55,7 +63,7 @@ const events = [
   },
   {
     date: '16-may-2025',
-    title: 'UGE-CE aprueba permiso HQP (3 años)',
+    title: 'UGE-CE aprueba permiso de Profesional Altamente Cualificado (3 años)',
     description: '"Autorización de residencia inicial para profesionales altamente cualificados" válida hasta el 15-may-2028, vinculada a Cognizant.',
     files: '16th Mai Approval Marouane.pdf',
     type: 'success',
@@ -80,7 +88,7 @@ const events = [
   {
     date: '30-may-2025',
     title: 'Cita para huellas dactilares programada',
-    description: 'Para emisión de TIE HQP; la cita falló (no fue reservada).',
+    description: 'Para emisión de TIE de Profesional Altamente Cualificado; la cita falló (no fue reservada).',
     files: 'Fingerprints appointment.pdf',
     type: 'warning',
     category: 'permiso'
@@ -129,7 +137,7 @@ const events = [
     date: '07-ago-2025',
     title: 'Presentada notificación REG ante UGE-CE',
     description: 'Informó oficialmente a UGE-CE de la cancelación del contrato, reclamación judicial e intención de modificar a empresario/autónomo.',
-    files: 'Justificante de Presentación REG Comunicacion UGE-CE.pdf',
+    files: 'Justificante de Presentación REG Comunicacion UGE-CE.pdf',
     type: 'info',
     category: 'permiso'
   },
@@ -156,6 +164,23 @@ const events = [
     files: '-',
     type: 'warning',
     category: 'legal'
+  },
+
+  {
+    date: '19-sep-2025',
+    title: 'Oferta laboral recibida de CGI',
+    description: 'CGI extiende oferta de trabajo.',
+    files: '19th Sep CGI Precontrato.pdf',
+    type: 'success',
+    category: 'oferta'
+  },
+  {
+    date: '06-oct-2025',
+    title: 'Cancelación de oferta por CGI',
+    description: 'CGI cancela la oferta debido a que el permiso de trabajo no era válido.',
+    files: '6th October CGI Work Permit Invalid.pdf',
+    type: 'error',
+    category: 'oferta'
   },
   {
     date: 'Principios oct 2025',
