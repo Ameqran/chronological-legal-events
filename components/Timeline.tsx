@@ -4,7 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { Calendar, FileText, AlertCircle, CheckCircle, XCircle, Clock, ChevronDown, Filter, Search, Eye } from 'lucide-react';
 import { Event, EventIconProps, TimelineEventProps, TypeConfig, TypeConfigs } from '../types';
 
-const events: Event[] = [
+const events = [
   {
     date: '09-abr-2025',
     title: 'Contrato laboral firmado con Cognizant',
@@ -21,7 +21,166 @@ const events: Event[] = [
     type: 'info',
     category: 'trabajo'
   },
-  // ... other events
+  {
+    date: '30 abr 2025',
+    title: 'Correo: contrato "en espera" hasta emisión HQP',
+    description: 'RRHH le informó que el contrato estaba pausado pendiente de resolución UGE-CE.',
+    files: 'Correos dentro del PDF "canceling the contract and work permit update"',
+    type: 'warning',
+    category: 'comunicación'
+  },
+  {
+    date: '02-may-2025',
+    title: 'Abogado de Cognizant presentó nueva solicitud HQP',
+    description: 'Solicitud de HQP "autorización de residencia inicial Ley 14/2013" presentada ante UGE-CE.',
+    files: '—',
+    type: 'info',
+    category: 'permiso'
+  },
+  {
+    date: '07-may-2025',
+    title: 'Empresa le dio de baja en la Seguridad Social',
+    description: 'SMS de TGSS confirma la baja. No se emitió comunicación escrita ni finiquito.',
+    files: 'seguridad social sms.jpg',
+    type: 'error',
+    category: 'seguridad-social'
+  },
+  {
+    date: '13-may-2025',
+    title: 'Empresa presentó datos engañosos ante TGSS/SEPE',
+    description: 'Presentó "escrito de anulación de alta" alegando que el empleado nunca se presentó; posteriormente descubierto por Marouane.',
+    files: 'ESCRITO ANULACION ALTA.pdf, Justificante de Presentacion REG.pdf',
+    type: 'error',
+    category: 'irregularidad'
+  },
+  {
+    date: '16-may-2025',
+    title: 'UGE-CE aprueba permiso HQP (3 años)',
+    description: '"Autorización de residencia inicial para profesionales altamente cualificados" válida hasta el 15-may-2028, vinculada a Cognizant.',
+    files: '16th Mai Approval Marouane.pdf',
+    type: 'success',
+    category: 'permiso'
+  },
+  {
+    date: '19-may-2025',
+    title: 'Empresa notificada de la aprobación pero no contrató',
+    description: 'Correo RRHH: esperando proyecto; sin incorporación ni salario.',
+    files: '—',
+    type: 'warning',
+    category: 'comunicación'
+  },
+  {
+    date: '27-may-2025',
+    title: 'Correo RRHH: contrato en espera / sin proyecto',
+    description: 'Confirma que aún no hay inicio; sin ingresos.',
+    files: 'Correo RRHH (texto en chat)',
+    type: 'warning',
+    category: 'comunicación'
+  },
+  {
+    date: '30-may-2025',
+    title: 'Cita para huellas dactilares programada',
+    description: 'Para emisión de TIE HQP; la cita falló (no fue reservada).',
+    files: 'Fingerprints appointment.pdf',
+    type: 'warning',
+    category: 'permiso'
+  },
+  {
+    date: '31-may-2025',
+    title: 'Presentada papeleta de conciliación SMAC',
+    description: 'Reclamó despido improcedente + salarios impagados (13.000 €).',
+    files: '-',
+    type: 'info',
+    category: 'legal'
+  },
+  {
+    date: '06-jun-2025',
+    title: 'Enviado burofax a Cognizant',
+    description: 'Exigió incorporación o extinción con indemnización + 500 € por 3 días trabajados.',
+    files: '-',
+    type: 'info',
+    category: 'legal'
+  },
+  {
+    date: '09-jun-2025',
+    title: 'Correo RRHH reconociendo burofax / equipo legal',
+    description: '"Nuestro equipo legal responderá pronto". Sin más respuesta.',
+    files: 'Captura correo RRHH',
+    type: 'warning',
+    category: 'comunicación'
+  },
+  {
+    date: '18-jun-2025',
+    title: 'Conciliación SMAC celebrada',
+    description: 'Empresa ofreció ~450 €; trabajador rechazó ("sin avenencia").',
+    files: 'Acta SMAC',
+    type: 'warning',
+    category: 'legal'
+  },
+  {
+    date: '25-jun-2025',
+    title: 'Representación legal a cargo de la abogada María José. Se ha presentado demanda por despido y reclamación de cantidad.',
+    description: 'Demanda interpuesta ante Juzgado de lo Social reclamando despido improcedente y 5.775 € (salarios abril-mayo 2025).',
+    files: 'DEMANDA DESPIDO MAROUANE.pdf',
+    type: 'info',
+    category: 'legal'
+  },
+  {
+    date: '07-ago-2025',
+    title: 'Presentada notificación REG ante UGE-CE',
+    description: 'Informó oficialmente a UGE-CE de la cancelación del contrato, reclamación judicial e intención de modificar a empresario/autónomo.',
+    files: 'Justificante de Presentación REG Comunicacion UGE-CE.pdf',
+    type: 'info',
+    category: 'permiso'
+  },
+  {
+    date: '11-ago-2025',
+    title: 'Confirmación REG recibida',
+    description: 'La Administración confirmó el registro y remisión a UGE-CE.',
+    files: 'Captura ("Registro confirmado 11-08-2025")',
+    type: 'success',
+    category: 'permiso'
+  },
+  {
+    date: '12-ago-2025',
+    title: 'Presentada modificación a "cuenta ajena y propia"',
+    description: 'Solicitud 280120250112231 presentada vía Extranjería',
+    files: 'justificante solicitude modificacion cuenta ajena y propia.pdf',
+    type: 'info',
+    category: 'permiso'
+  },
+  {
+    date: '18-sep-2025',
+    title: 'Segunda conciliación (previa al juicio)',
+    description: 'Abogada recalculó 6.724 € en salarios + intereses; empresa siguió rechazando.',
+    files: '-',
+    type: 'warning',
+    category: 'legal'
+  },
+  {
+    date: 'Principios oct 2025',
+    title: 'NIE duplicado (Z37…)',
+    description: 'Sistema generó automáticamente nuevo NIE; posteriormente aclarado que es temporal (NIE real Y9980125W sigue válido).',
+    files: '-',
+    type: 'warning',
+    category: 'permiso'
+  },
+  {
+    date: '10-oct-2025',
+    title: 'Extranjería denegó la modificación',
+    description: 'Resolución rechazó modificación a cuenta ajena y propia porque HQP sigue activa y no ha sido revocada.',
+    files: 'denegacion cuenta ajena y propia.pdf',
+    type: 'error',
+    category: 'permiso'
+  },
+  {
+    date: '11-oct-2025 → Presente',
+    title: 'Estado actual: preparación recurso / residencia válida hasta 2028',
+    description: 'Preparando recurso de reposición',
+    files: '—',
+    type: 'info',
+    category: 'estado-actual'
+  }
 ];
 
 const EventIcon = ({ type }: EventIconProps) => {
