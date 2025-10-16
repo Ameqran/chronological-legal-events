@@ -17,7 +17,7 @@ const events: Event[] = [
     date: '09-abr-2025',
     title: 'Contrato laboral firmado con Cognizant',
     description: 'Firmado contrato indefinido (63.000 €/año) para iniciar trabajo el 28-abr-2025 bajo Profesional Altamente Cualificado (Ley 14/2013).',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1Cb66uux_hezSSa_Mvf2MaW3zRUbIbGtF/view?usp=drive_link" target="_blank">Cognizant contract signed.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1Cb66uux_hezSSa_Mvf2MaW3zRUbIbGtF/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">Cognizant contract signed.pdf</a></i></li></ul>',
     type: 'success',
     category: 'contrato'
   },
@@ -25,7 +25,7 @@ const events: Event[] = [
     date: '28–30 abr 2025',
     title: 'Trabajo realizado para Cognizant / configuración de cliente',
     description: 'Trabajó tres días configurando portátiles de cliente (ING). RRHH posteriormente pidió devolverlos.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1w4VZX6ro3kIBzlaWB1DxCmofPet_jVV8/view?usp=drive_link" target="_blank">28th April 1st day pickup & receiving laptops.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1fdylsplh52TXVkQXFzqGhxieAOP1Jr5s/view?usp=drive_link" target="_blank">29th April 2nd day setup of ING computers.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1iNp9VJpjOv6k06eB2BhfbCotBAwh12AB/view?usp=drive_link" target="_blank">30th April 3rd day standby and permit process.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1DRCQomgfSqP35QI6UeAAkSvD91Vle4sC/view?usp=drive_link" target="_blank">work permit with Cognizant.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1w4VZX6ro3kIBzlaWB1DxCmofPet_jVV8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">28th April 1st day pickup & receiving laptops.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1fdylsplh52TXVkQXFzqGhxieAOP1Jr5s/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">29th April 2nd day setup of ING computers.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1iNp9VJpjOv6k06eB2BhfbCotBAwh12AB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">30th April 3rd day standby and permit process.pdf</a></i></li><li><i><a href="https://drive.google.com/file/d/1DRCQomgfSqP35QI6UeAAkSvD91Vle4sC/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">work permit with Cognizant.pdf</a></i></li></ul>',
     type: 'info',
     category: 'trabajo'
   },
@@ -49,7 +49,7 @@ const events: Event[] = [
     date: '07-may-2025',
     title: 'Empresa le dio de baja en la Seguridad Social',
     description: 'SMS de TGSS confirma la baja. No se emitió comunicación escrita ni finiquito.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/17QmDfJoE2d0cdFARSX9VGAI2jbRlNLtC/view?usp=drive_link" target="_blank">seguridad social sms.jpg</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/17QmDfJoE2d0cdFARSX9VGAI2jbRlNLtC/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">seguridad social sms.jpg</a></i></li></ul>',
     type: 'error',
     category: 'seguridad-social'
   },
@@ -57,7 +57,7 @@ const events: Event[] = [
     date: '13-may-2025',
     title: 'Empresa presentó datos engañosos ante TGSS/SEPE',
     description: 'Presentó "escrito de anulación de alta" alegando que el empleado nunca se presentó; posteriormente descubierto por Marouane.',
-    files: '<ul><li><i>ESCRITO ANULACION ALTA.pdf</i></li><li><i><a href="https://drive.google.com/file/d/1QJ7svKt654UHTZMFqc5gTlrN-UmsAGZO/view?usp=drive_link" target="_blank">Justificante de Presentacion REG.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i class="text-gray-500">ESCRITO ANULACION ALTA.pdf (Pendiente)</i></li><li><i><a href="https://drive.google.com/file/d/1QJ7svKt654UHTZMFqc5gTlrN-UmsAGZO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">Justificante de Presentacion REG.pdf</a></i></li></ul>',
     type: 'error',
     category: 'irregularidad'
   },
@@ -65,7 +65,7 @@ const events: Event[] = [
     date: '16-may-2025',
     title: 'UGE-CE aprueba permiso de Profesional Altamente Cualificado (3 años)',
     description: '"Autorización de residencia inicial para profesionales altamente cualificados" válida hasta el 15-may-2028, vinculada a Cognizant.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1MK4hFscuCZCdMfLfTDxO_1lNqrS_w9XR/view?usp=drive_link" target="_blank">16th Mai Approval Marouane.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1MK4hFscuCZCdMfLfTDxO_1lNqrS_w9XR/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">16th Mai Approval Marouane.pdf</a></i></li></ul>',
     type: 'success',
     category: 'permiso'
   },
@@ -89,7 +89,7 @@ const events: Event[] = [
     date: '30-may-2025',
     title: 'Cita para huellas dactilares programada',
     description: 'Para emisión de TIE de Profesional Altamente Cualificado; la cita falló (no fue reservada).',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1CMbVSxQhRmFI2JjINbz4KJ26v1g15EzH/view?usp=drive_link" target="_blank">Fingerprints appointment.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1CMbVSxQhRmFI2JjINbz4KJ26v1g15EzH/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">Fingerprints appointment.pdf</a></i></li></ul>',
     type: 'warning',
     category: 'permiso'
   },
@@ -129,7 +129,7 @@ const events: Event[] = [
     date: '25-jun-2025',
     title: 'Representación legal a cargo de la abogada María José. Se ha presentado demanda por despido y reclamación de cantidad.',
     description: 'Demanda interpuesta ante Juzgado de lo Social reclamando despido improcedente y 5.775 € (salarios abril-mayo 2025).',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1nTX-XN7kFE5G29WLElNEQNOOVH9PiEhK/view?usp=drive_link" target="_blank">DEMANDA DESPIDO MAROUANE.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1nTX-XN7kFE5G29WLElNEQNOOVH9PiEhK/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">DEMANDA DESPIDO MAROUANE.pdf</a></i></li></ul>',
     type: 'info',
     category: 'legal'
   },
@@ -137,7 +137,7 @@ const events: Event[] = [
     date: '07-ago-2025',
     title: 'Presentada notificación REG ante UGE-CE',
     description: 'Informó oficialmente a UGE-CE de la cancelación del contrato, reclamación judicial e intención de modificar a empresario/autónomo.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1dFEx-vW79TM94Xo4zAWb6r4S74XJSf4H/view?usp=drive_link" target="_blank">Justificante de Presentación REG Comunicacion UGE-CE.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1dFEx-vW79TM94Xo4zAWb6r4S74XJSf4H/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">Justificante de Presentación REG Comunicacion UGE-CE.pdf</a></i></li></ul>',
     type: 'info',
     category: 'permiso'
   },
@@ -145,7 +145,7 @@ const events: Event[] = [
     date: '11-ago-2025',
     title: 'Confirmación REG recibida',
     description: 'La Administración confirmó el registro y remisión a UGE-CE.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1tuKwwwpA3TVFFO0yeVgX8o4WTxQXwmnP/view?usp=drive_link" target="_blank">Captura ("Registro confirmado 11-08-2025").png</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1tuKwwwpA3TVFFO0yeVgX8o4WTxQXwmnP/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">Captura ("Registro confirmado 11-08-2025").png</a></i></li></ul>',
     type: 'success',
     category: 'permiso'
   },
@@ -153,7 +153,7 @@ const events: Event[] = [
     date: '12-ago-2025',
     title: 'Presentada modificación a "cuenta ajena y propia"',
     description: 'Solicitud 280120250112231 presentada vía Extranjería',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1wA8yxHXvs2bFPs_n-ZPU39fFZqO-N3Cs/view?usp=drive_link" target="_blank">justificante solicitude modificacion cuenta ajena y propia.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1wA8yxHXvs2bFPs_n-ZPU39fFZqO-N3Cs/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">justificante solicitude modificacion cuenta ajena y propia.pdf</a></i></li></ul>',
     type: 'info',
     category: 'permiso'
   },
@@ -170,7 +170,7 @@ const events: Event[] = [
     date: '19-sep-2025',
     title: 'Oferta laboral recibida de CGI',
     description: 'CGI extiende oferta de trabajo.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1Lt1kUxpOSKdM4OyhEHI71SnqGq8Nw9dB/view?usp=drive_link" target="_blank">19th Sep CGI Precontrato.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1Lt1kUxpOSKdM4OyhEHI71SnqGq8Nw9dB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">19th Sep CGI Precontrato.pdf</a></i></li></ul>',
     type: 'success',
     category: 'oferta'
   },
@@ -178,7 +178,7 @@ const events: Event[] = [
     date: '06-oct-2025',
     title: 'Cancelación de oferta por CGI',
     description: 'CGI cancela la oferta debido a que el permiso de trabajo no era válido.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1RJO5KLQftKa_ixk9y_U7fsq7Apprh8rO/view?usp=drive_link" target="_blank">6th October CGI Work Permit Invalid.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1RJO5KLQftKa_ixk9y_U7fsq7Apprh8rO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">6th October CGI Work Permit Invalid.pdf</a></i></li></ul>',
     type: 'error',
     category: 'oferta'
   },
@@ -187,7 +187,7 @@ const events: Event[] = [
     date: '10-oct-2025',
     title: 'Extranjería denegó la modificación',
     description: 'Resolución rechazó modificación a cuenta ajena y propia porque HQP sigue activa y no ha sido revocada.',
-    files: '<ul><li><i><a href="https://drive.google.com/file/d/1nsYLdVJfIR2UJDRNpsyFSdCpOho1P1Ti/view?usp=drive_link" target="_blank">denegacion cuenta ajena y propia.pdf</a></i></li></ul>',
+    files: '<ul class="list-none"><li><i><a href="https://drive.google.com/file/d/1nsYLdVJfIR2UJDRNpsyFSdCpOho1P1Ti/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">denegacion cuenta ajena y propia.pdf</a></i></li></ul>',
     type: 'error',
     category: 'permiso'
   },
@@ -287,8 +287,14 @@ const TimelineEvent = ({ event, isExpanded, onToggle }: TimelineEventProps) => {
                       <FileText className="w-4 h-4 text-gray-500" />
                     </div>
                     <div className="w-full">
-                      <p className="font-semibold text-gray-700 mb-2">Documentación:</p>
-                      <div dangerouslySetInnerHTML={{ __html: event.files }} className="text-gray-600 leading-relaxed" />
+                      <div className="flex items-center gap-2 mb-3">
+                        <p className="font-semibold text-gray-700">Documentación</p>
+                        <span className="text-xs text-blue-500">(Click para abrir)</span>
+                      </div>
+                      <div 
+                        dangerouslySetInnerHTML={{ __html: event.files }} 
+                        className="text-gray-600 leading-relaxed [&>ul]:space-y-2 [&>ul>li]:flex [&>ul>li]:items-center [&>ul>li]:gap-2 [&>ul>li>i>a]:text-blue-600 [&>ul>li>i>a]:hover:text-blue-800 [&>ul>li>i>a]:underline [&>ul>li>i>a]:transition-colors [&>ul>li>i>a]:duration-200 [&>ul>li]:before:content-['📄'] [&>ul>li]:before:mr-2" 
+                      />
                     </div>
                   </div>
                 </div>
