@@ -1,8 +1,13 @@
+interface DocumentFile {
+  name: string;
+  url?: string;
+}
+
 export interface Event {
   date: string;
   title: string;
   description: string;
-  files: string;
+  files: DocumentFile[] | '-' | '—';
   type: 'success' | 'error' | 'warning' | 'info';
   category: string;
 }
